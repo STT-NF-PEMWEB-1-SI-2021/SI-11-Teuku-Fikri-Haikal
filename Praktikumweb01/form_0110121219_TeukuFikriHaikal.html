@@ -1,0 +1,99 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>FORM PEMESANAN</title>
+  </head>
+  <body bgcolor="black" text="white">
+    <h1 align="center">FORM PEMESANAN</h1>
+    <h4 align="center">Pizza delivery</h4>
+    <br/>
+     
+        <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKV1nxpUKjjMJ5WoXx7tJYmnV3f1aQDDbFpA&usqp=CAU"alt="logo Pizza"></center>
+
+    <br/>
+    <hr/>
+        <br/>
+        <br/>
+        <h3>Customer Name</h3>
+        <form action="" method="POST">
+        <form>
+            <label>
+                Full Nama:<input type="text" placeholder="Enter Name"> 
+            </label>
+            <br/>
+            <label>
+                Address:<input type="text" placeholder="Your Address">
+            </label>
+            <br/>
+            <label>
+                Contact number:<input type="text" placeholder="+62...........">
+            </label>
+            <br/>
+            <label>
+                E-mail:<input type="text" placeholder="contoh@gmail.com">
+            </label>
+            <br/>
+            <label>
+                Delivery Instruction:<br/>
+                <textarea placeholder="enter message" cols="40" rows="3"></textarea>
+            </label>
+        </form>
+        </table>
+        <h3>Your Order</h3>
+        <table>
+            <tr>
+                <td><input type="radio" name="cs">Classic white
+            </tr>
+            <tr>
+                <td><input type="radio" name="cs">Multigrain
+            </tr>
+            <tr>
+                <td><input type="radio" name="cs">Cheese-Stuffed crust
+            </tr>
+            <tr>
+                <td><input type="radio" name="cs">Gluten free
+            </tr>
+        </table>
+        <br>
+        <h4>Toppings</h4>
+        <table>
+            <tr>
+                <td><input type="checkbox">Red sauce
+            </tr>
+            <tr>
+                 <td><input type="checkbox">White sauce
+            </tr>
+        <tr>
+          <td><input type="checkbox">Mozzarella
+        </tr>
+        <tr>
+          <td><input type="checkbox">Pepperoni
+        </tr>
+        <tr>
+          <td><input type="checkbox">Mushrooms
+        </tr>
+        <tr>
+          <td><input type="checkbox">Peppers
+        </tr>
+        <tr>
+          <td><input type="checkbox">Anchovies
+        </tr>
+      </table>
+      <br>
+      <p>how many boxes to order :
+      <br>
+      <input list="orders" name="orders">
+      <datalist id="orders">
+        <option value="1 box">
+        <option value="2 box">
+        <option value="3 box">
+        <option value="4 box">
+        <option value="5 box">
+      </datalist>
+      <input type="submit">
+    </form>
+    <h6>Thank you for ordering :)</h6>
+    <br>
+  </body>
+</html>
