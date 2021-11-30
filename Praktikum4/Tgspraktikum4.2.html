@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        .main {
+            max-width: 3000px; border: 2px solid rgb(0, 0, 0);
+        }
+        .main .content1 {
+            box-sizing: 70px;
+        }
+        .main .content1 .navbar {
+            display: flex; background-color: rgba(209, 209, 209, 0.981); 
+            border-style: solid; border-width: 1px;
+        }
+        .main .content2 {
+            display: flex; gap: 15px; margin-top: 30px; padding: 10px;
+        }
+        .main .content2 .properties {
+            width: 80%;
+        }
+        .main .content2 .properties .tab1 {
+            width: 100%; border-collapse: collapse; width: 1000px;
+        }
+        .main .content2 .properties .tab1 .tab2 {
+            max-block-size: 50px;
+        }
+        .main .content2 .properties2 {
+            margin-left: 0px; background-color: rgba(146, 145, 145, 0.357);
+        }
+        .main .content3 {
+            background-color: rgba(209, 209, 209, 0.981);
+        }
+        .main .content3 .navbar2 {
+            background-color: rgba(209, 209, 209, 0.981); display: flex; border-style: solid; border-width: 1px;
+        }
+    </style>
+</head>
+<body class="main">
+    <div class="content1">
+        <nav class="navbar">
+            <ul  style="display: flex; list-style-type: square; align-self: center;">
+                <li>Vikshop</li>
+            </ul>
+            <ul style="display: flex; list-style-type: none;">
+                <li style="align-self: center;">
+                    <a href="#">Category 1</a> |
+                    <a href="#">Category 2</a> |
+                    <a href="#">Category 3</a> 
+                </li>
+            </ul>
+            <ul style="margin-left: 800px; list-style-type: none;">
+                <li style="display: flex; gap: 5px; align-items: center;">
+                    <img src="image/Ikon Search.jpg" alt="" style="width: 20px;">
+                    <img src="image/Ikon Keranjang.jpg" alt="" style="width: 20px;">
+                    <p style="display: flex;">Cart(1)</p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content2">
+        <main class="properties">
+            <img src="image/Ceklist.png" alt="" style="float: left; margin-top: -10px; width: 60px;">
+            <h6 style="margin-left: 60px; margin-top: -20px;">Order 14719</h6>
+            <h2 style="margin-left: 50px; margin-top: -20px;">Thank You, Vikry!</h2>
+            <table class="tab1">
+                <thead class="tab2">
+                    <tr>
+                        <td style="border-top: 1px solid rgb(0, 0, 0);">your order is confirmed</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);">w've accepted your order an we're getting it ready</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><h3>Customer Information</h3></td>
+                    </tr>
+                    <tr>
+                        <td><b>Shipping Adress</b></td>
+                        <td><b>Billing Adress</b></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Jl. Transyogi No.17, Bogor, 16840.</a></td>
+                        <td><a href="#">Jl. Transyogi No.17, Bogor, 16840.</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><td style="color: rgb(255, 255, 255);">____________</td></td>
+                    </tr>
+                    <tr style="border-top: 1px solid black;">
+                        <td><b>shipping method</b></td>
+                        <td><b>Payment methode</b></td>
+                    </tr>
+                    <tr>
+                        <td>J&T Express (estimoted 3-4 Day)</td>
+                        <td><img src="image/Visa.png" alt="" style="width: 30px;"> Ending in 2317-$23.60</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <aside class="properties2">
+            <h4>Summary (1 Item)</h4>
+            <table>
+                <tr>
+                    <td>Sub Total</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>$2.20</td>
+                </tr>
+                <tr>
+                    <td>Est. Toxes</td>
+                    <td>$1.40</td>
+                </tr>
+                <tr>
+                    <td>__________________________</td>
+                </tr>
+                <tr>
+                    <td><b>Gift card discount code</b></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="promo" id="promo"></td>
+                    <td><input type="submit" id="promo" value="Apply" style="margin-left: -30px;"></td>
+                </tr>
+                <tr>
+                    <td>__________________________</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$23.60</td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+    <div class="content3">
+        <nav class="navbar2">
+            <ul style="display: flex; list-style-type: none; align-self: center;">
+                <li style="margin-top: -10px;">VikShop</li>
+                <li style="margin-top: 10px; margin-bottom: -30px; margin-left: -70px;">
+                    <img src="image/Visa.png" alt="" style="width: 20px;">
+                    <img src="image/mastercard.png" alt="" style="width: 20px;">
+                </li>
+            </ul>
+            <ul style="display: flex; list-style-type: none;">
+                <li style="align-self: center; margin-left: 30px;">
+                    <a href="">Category X</a> |
+                    <a href="">Category Y</a> |
+                    <a href="">Category Z</a> | 
+                </li>
+            </ul>
+            <ul style="margin-left: auto; list-style-type: none;">
+                <li style="display: flex;">
+                    <input type="text" placeholder="enter email" style="margin: 20px;">
+                    <input type="submit" value="Kirim" style="margin: 20px; margin-left: -30px;">
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
