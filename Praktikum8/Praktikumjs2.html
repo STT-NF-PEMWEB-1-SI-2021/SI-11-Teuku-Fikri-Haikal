@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2 JS Menghitung kurs Rupiah</title>
+    <script>
+        function hitung(){
+            const rupiah = 14650
+            let dollar = document.getElementById("bil1").value;
+            console.log("US Dollar : " + dollar);
+            let kurs = rupiah * dollar;
+            console.log("Nominal Kurs Dollar : " + kurs);
+            let hasil = document.getElementById("hasil");
+            hasil.innerHTML = "Rp " + kurs;
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Menghitung Kurs Rupiah</legend>
+      Dollar :
+      <input type="number" value="" size="10" id="bil1">
+      <br>
+      <button onclick="hitung()">Rupiah</button>
+      <br>
+      Hasil : <span id="hasil"></span>
+    </fieldset>
+</body>
+</html>
