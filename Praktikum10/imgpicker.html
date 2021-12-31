@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        select{
+            width: 250px;
+            height: 40px;
+            border: 3px solid skyblue;
+            border-radius: 7px;
+        }
+        fieldset{
+            height: 600px;
+            border-radius: 10px;
+            border: 2px solid skyblue;
+        }
+        img{
+            border: 2px solid;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+            <select>
+                <option value="gajah">Gajah</option>
+                <option value="Beruanges">Beruanges</option>
+                <option value="harimau">Harimau</option>
+                <option value="gorila">Gorila</option>
+                <option value="singa">Singa</option>
+                <option value="rusa">Rusa</option>
+            </select>
+            <br>
+            <br>
+            <img>
+    <script>
+        let imagePicker = document.querySelector("select")
+        imagePicker.onclick = function () {
+            let image = document.querySelector('img')
+            if (imagePicker.value == "gajah") {
+                image.setAttribute("src", "img/gajah.jpg") 
+            } 
+            else if (imagePicker.value == "Beruanges") {
+                image.setAttribute("src", "img/Beruanges.jpg") 
+            } 
+            else if (imagePicker.value == "harimau") {
+                image.setAttribute("src", "img/harimau.jpg") 
+            } 
+            else if (imagePicker.value == "gorila") {
+                image.setAttribute("src", "img/gorila.jpg") 
+            } 
+            else if (imagePicker.value == "singa") {
+                image.setAttribute("src", "img/singa.jpg") 
+            } 
+            else if (imagePicker.value == "rusa") {
+                image.setAttribute("src", "img/rusa.jpg") 
+            }
+        }
+    </script>
+</body>
+</html>
